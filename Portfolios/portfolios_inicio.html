@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <title>INICIO</title>
+    <meta charset="utf-8"/>  <link rel="stylesheet" type="text/css" href="hoja_estilos_portfolio.css">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">	
+	
+	<script>
+	
+		function cerrar(){
+		
+			document.getElementById("modal").style.display = "none";
+		
+		}
+		
+		function abrirModal(ruta){
+		
+			document.getElementById("modal").style.display = "block";
+			
+			document.getElementById("imgModal").src = ruta;
+		
+		}
+		
+
+		function cerrar2(){
+		
+			document.getElementById("modal2").style.display = "none";
+		
+		}
+		
+		function abrirModal2(){
+		
+			document.getElementById("modal2").style.display = "block";
+			
+
+		}
+		
+	</script>
+	
+</head>
+<body>   
+
+		<div class= "modal" id="modal">
+			
+			<img id="imgModal" src="">
+			
+			<i class="fas fa-times fa-8x " id="cross" onclick="cerrar();"></i>
+			
+		</div>
+		
+		<div class= "modal" id="modal2">
+			<iframe id="videoModal" width="560" height="315" src="https://www.youtube.com/embed/DrhtCNU75vc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+			
+			<i class="fas fa-times fa-8x " id="cross" onclick="cerrar2();"></i>
+			
+		</div>
+		
+<section id="wrap1" class="wrap">
+		
+		<div class="container">
+
+			<div class="caja caja1" onclick="abrirModal2();">
+				<h3>Demo reel</h3>
+			</div>
+			<div class="caja caja2">
+				<img src="imagenes/ferreteria_inicial.jpg" alt="Espada_Escudo" onclick="abrirModal('imagenes/ferreteria_inicial.jpg');">
+				<p>HOLA</p>
+				
+			</div>
+			<div class="caja caja3">
+				<h3>3</h3>
+				<img src="imagenes/render_espada_escudo.jpg" alt="Espada_Escudo" onclick="abrirModal('imagenes/render_espada_escudo.jpg');">
+			</div>
+			<div class="caja caja4">
+				<h3>4</h3>
+			</div>
+			<div class="caja caja5">
+				<h3>5</h3>
+			</div>
+			<div class="caja caja6">
+				<h3>6</h3>
+			</div>
+			<div class="caja caja7">
+				<h3>7</h3>
+			</div>
+			<div class="caja caja8">
+				<h3>8</h3>
+			</div>
+			<div class="caja caja9">
+				<h3>9</h3>
+			</div>
+
+		</div>
+	</section>
+
+		<footer id="footer">
+		<div id="pagPortfolios">
+			<h3> Copyright 2019. Raul Luquero</h3>
+		</div>		
+			
+</body>
